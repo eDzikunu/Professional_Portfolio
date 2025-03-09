@@ -33,7 +33,7 @@ export default function Hero() {
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-gray-800 dark:text-white">
             <span className="block">Hi, I'm John Doe</span>
-            <span className="block text-secondary dark:text-blue-400 mt-2">Full Stack Developer</span>
+            <span className="block text-blue-600 dark:text-blue-400 mt-2">Full Stack Developer</span>
           </h1>
           <p className="text-gray-700 dark:text-slate-300 text-lg md:text-xl mb-8 max-w-lg">
             I build exceptional and accessible digital experiences for the web, specializing in modern JavaScript frameworks and responsive design.
@@ -41,13 +41,13 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4">
             <a 
               href="#projects" 
-              className="bg-secondary hover:bg-blue-600 text-white px-6 py-3 rounded-md transition-colors text-center font-medium"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md transition-colors text-center font-medium"
             >
               View My Work
             </a>
             <a 
               href="#contact"
-              className="border border-secondary text-secondary hover:bg-secondary hover:text-white px-6 py-3 rounded-md transition-colors text-center font-medium dark:text-blue-400 dark:border-blue-400 dark:hover:bg-blue-500 dark:hover:border-blue-500 dark:hover:text-white"
+              className="border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-6 py-3 rounded-md transition-colors text-center font-medium dark:text-blue-400 dark:border-blue-400 dark:hover:bg-blue-500 dark:hover:border-blue-500 dark:hover:text-white"
             >
               Get In Touch
             </a>

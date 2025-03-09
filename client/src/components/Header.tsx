@@ -35,7 +35,7 @@ export default function Header() {
     }`}>
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <a href="#hero" className="text-2xl font-bold flex items-center space-x-2">
-          <span className="text-secondary dark:text-blue-400">John</span>
+          <span className="text-blue-600 dark:text-blue-400">John</span>
           <span className="text-gray-800 dark:text-white">Doe</span>
         </a>
         
@@ -43,13 +43,13 @@ export default function Header() {
         <nav className="hidden md:flex space-x-8">
           <a 
             href="#about" 
-            className={`text-gray-700 hover:text-secondary transition-colors relative dark:text-gray-300 dark:hover:text-secondary ${activeSection === "about" ? "text-secondary dark:text-secondary after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-secondary" : ""}`}
+            className={`text-gray-700 hover:text-blue-600 transition-colors relative dark:text-gray-300 dark:hover:text-blue-400 ${activeSection === "about" ? "text-blue-600 dark:text-blue-400 after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-blue-600 dark:after:bg-blue-400" : ""}`}
           >
             About
           </a>
           <a 
             href="#skills"
-            className={`text-gray-700 hover:text-secondary transition-colors relative dark:text-gray-300 dark:hover:text-secondary ${activeSection === "skills" ? "text-secondary dark:text-secondary after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-secondary" : ""}`}
+            className={`text-gray-700 hover:text-blue-600 transition-colors relative dark:text-gray-300 dark:hover:text-blue-400 ${activeSection === "skills" ? "text-blue-600 dark:text-blue-400 after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-blue-600 dark:after:bg-blue-400" : ""}`}
           >
             Skills
           </a>
@@ -84,7 +84,7 @@ export default function Header() {
           {/* Resume Button */}
           <a 
             href="/resume.pdf" 
-            className="bg-secondary hover:bg-blue-600 text-white px-4 py-2 rounded-md transition-colors"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -152,7 +152,7 @@ export default function Header() {
           </a>
           <a 
             href="/resume.pdf" 
-            className="bg-secondary hover:bg-blue-600 text-white px-4 py-2 rounded-md transition-colors text-center"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors text-center"
             target="_blank"
             rel="noopener noreferrer"
             onClick={closeMobileMenu}
