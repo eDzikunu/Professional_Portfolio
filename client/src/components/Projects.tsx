@@ -3,7 +3,7 @@ import { projects } from "@/lib/data";
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 bg-white">
+    <section id="projects" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <motion.div 
           className="text-center mb-16"
@@ -12,9 +12,9 @@ export default function Projects() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 dark:text-white">Featured Projects</h2>
           <div className="h-1 w-20 bg-secondary mx-auto"></div>
-          <p className="text-slate-600 max-w-2xl mx-auto mt-4">
+          <p className="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mt-4">
             Here are some of my recent projects. Each one was carefully crafted to solve specific problems and showcase different skills.
           </p>
         </motion.div>
@@ -23,14 +23,14 @@ export default function Projects() {
           {projects.map((project, index) => (
             <motion.div 
               key={project.id}
-              className="project-card bg-white rounded-lg overflow-hidden shadow-md"
+              className="project-card bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <div className="h-48 overflow-hidden relative">
-                <div className="w-full h-full bg-gradient-to-r from-blue-50 to-blue-100 text-blue-500 flex items-center justify-center">
+                <div className="w-full h-full bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900 dark:to-blue-800 text-blue-500 dark:text-blue-300 flex items-center justify-center">
                   <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                   </svg>
@@ -52,18 +52,18 @@ export default function Projects() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-slate-600 mb-4">
+                <h3 className="text-xl font-bold mb-2 dark:text-white">{project.title}</h3>
+                <p className="text-slate-600 dark:text-slate-300 mb-4">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, techIndex) => (
-                    <span key={techIndex} className="px-2 py-1 bg-blue-100 text-blue-700 rounded-md text-xs">
+                    <span key={techIndex} className="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-md text-xs">
                       {tech}
                     </span>
                   ))}
                 </div>
-                <a href="#" className="text-secondary hover:text-blue-600 font-medium flex items-center space-x-1">
+                <a href="#" className="text-secondary dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 font-medium flex items-center space-x-1">
                   <span>View Case Study</span>
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
@@ -75,7 +75,7 @@ export default function Projects() {
         </div>
         
         <div className="text-center mt-12">
-          <a href="#" className="inline-flex items-center space-x-2 bg-white border border-secondary text-secondary hover:bg-secondary hover:text-white px-6 py-3 rounded-md transition-colors font-medium">
+          <a href="#" className="inline-flex items-center space-x-2 bg-white dark:bg-gray-800 border border-secondary dark:border-blue-500 text-secondary dark:text-blue-400 hover:bg-secondary hover:text-white dark:hover:bg-blue-700 px-6 py-3 rounded-md transition-colors font-medium">
             <span>View All Projects</span>
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />

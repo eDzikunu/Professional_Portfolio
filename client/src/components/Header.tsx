@@ -75,9 +75,9 @@ export default function Header() {
             aria-label="Toggle dark mode"
           >
             {theme === 'dark' ? (
-              <Sun className="h-5 w-5 text-yellow-400" />
+              <Sun className="h-5 w-5 text-white" />
             ) : (
-              <Moon className="h-5 w-5 text-gray-700" />
+              <Moon className="h-5 w-5 text-black" />
             )}
           </button>
 
@@ -101,9 +101,9 @@ export default function Header() {
             aria-label="Toggle dark mode"
           >
             {theme === 'dark' ? (
-              <Sun className="h-5 w-5 text-yellow-400" />
+              <Sun className="h-5 w-5 text-white" />
             ) : (
-              <Moon className="h-5 w-5 text-gray-700" />
+              <Moon className="h-5 w-5 text-black" />
             )}
           </button>
 
