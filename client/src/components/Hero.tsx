@@ -31,11 +31,11 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 dark:text-white">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-gray-800 dark:text-white">
             <span className="block">Hi, I'm John Doe</span>
             <span className="block text-secondary mt-2">Full Stack Developer</span>
           </h1>
-          <p className="text-slate-600 dark:text-slate-300 text-lg md:text-xl mb-8 max-w-lg">
+          <p className="text-gray-700 dark:text-slate-300 text-lg md:text-xl mb-8 max-w-lg">
             I build exceptional and accessible digital experiences for the web, specializing in modern JavaScript frameworks and responsive design.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
