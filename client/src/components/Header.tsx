@@ -43,25 +43,25 @@ export default function Header() {
         <nav className="hidden md:flex space-x-8">
           <a 
             href="#about" 
-            className={`hover:text-secondary transition-colors relative dark:text-gray-300 dark:hover:text-secondary ${activeSection === "about" ? "text-secondary dark:text-secondary after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-secondary" : ""}`}
+            className={`text-gray-700 hover:text-secondary transition-colors relative dark:text-gray-300 dark:hover:text-secondary ${activeSection === "about" ? "text-secondary dark:text-secondary after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-secondary" : ""}`}
           >
             About
           </a>
           <a 
             href="#skills"
-            className={`hover:text-secondary transition-colors relative dark:text-gray-300 dark:hover:text-secondary ${activeSection === "skills" ? "text-secondary dark:text-secondary after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-secondary" : ""}`}
+            className={`text-gray-700 hover:text-secondary transition-colors relative dark:text-gray-300 dark:hover:text-secondary ${activeSection === "skills" ? "text-secondary dark:text-secondary after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-secondary" : ""}`}
           >
             Skills
           </a>
           <a 
             href="#projects"
-            className={`hover:text-secondary transition-colors relative dark:text-gray-300 dark:hover:text-secondary ${activeSection === "projects" ? "text-secondary dark:text-secondary after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-secondary" : ""}`}
+            className={`text-gray-700 hover:text-secondary transition-colors relative dark:text-gray-300 dark:hover:text-secondary ${activeSection === "projects" ? "text-secondary dark:text-secondary after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-secondary" : ""}`}
           >
             Projects
           </a>
           <a 
             href="#contact"
-            className={`hover:text-secondary transition-colors relative dark:text-gray-300 dark:hover:text-secondary ${activeSection === "contact" ? "text-secondary dark:text-secondary after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-secondary" : ""}`}
+            className={`text-gray-700 hover:text-secondary transition-colors relative dark:text-gray-300 dark:hover:text-secondary ${activeSection === "contact" ? "text-secondary dark:text-secondary after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-secondary" : ""}`}
           >
             Contact
           </a>
@@ -124,28 +124,28 @@ export default function Header() {
         <div className="container mx-auto px-4 py-3 flex flex-col space-y-3">
           <a 
             href="#about" 
-            className={`py-2 hover:text-secondary transition-colors dark:text-gray-300 dark:hover:text-secondary ${activeSection === "about" ? "text-secondary dark:text-secondary" : ""}`}
+            className={`py-2 text-gray-700 hover:text-secondary transition-colors dark:text-gray-300 dark:hover:text-secondary ${activeSection === "about" ? "text-secondary dark:text-secondary" : ""}`}
             onClick={closeMobileMenu}
           >
             About
           </a>
           <a 
             href="#skills" 
-            className={`py-2 hover:text-secondary transition-colors dark:text-gray-300 dark:hover:text-secondary ${activeSection === "skills" ? "text-secondary dark:text-secondary" : ""}`}
+            className={`py-2 text-gray-700 hover:text-secondary transition-colors dark:text-gray-300 dark:hover:text-secondary ${activeSection === "skills" ? "text-secondary dark:text-secondary" : ""}`}
             onClick={closeMobileMenu}
           >
             Skills
           </a>
           <a 
             href="#projects" 
-            className={`py-2 hover:text-secondary transition-colors dark:text-gray-300 dark:hover:text-secondary ${activeSection === "projects" ? "text-secondary dark:text-secondary" : ""}`}
+            className={`py-2 text-gray-700 hover:text-secondary transition-colors dark:text-gray-300 dark:hover:text-secondary ${activeSection === "projects" ? "text-secondary dark:text-secondary" : ""}`}
             onClick={closeMobileMenu}
           >
             Projects
           </a>
           <a 
             href="#contact" 
-            className={`py-2 hover:text-secondary transition-colors dark:text-gray-300 dark:hover:text-secondary ${activeSection === "contact" ? "text-secondary dark:text-secondary" : ""}`}
+            className={`py-2 text-gray-700 hover:text-secondary transition-colors dark:text-gray-300 dark:hover:text-secondary ${activeSection === "contact" ? "text-secondary dark:text-secondary" : ""}`}
             onClick={closeMobileMenu}
           >
             Contact
