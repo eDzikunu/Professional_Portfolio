@@ -55,13 +55,13 @@ export default function Header() {
           </a>
           <a 
             href="#projects"
-            className={`text-gray-700 hover:text-secondary transition-colors relative dark:text-gray-300 dark:hover:text-secondary ${activeSection === "projects" ? "text-secondary dark:text-secondary after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-secondary" : ""}`}
+            className={`text-gray-700 hover:text-blue-600 transition-colors relative dark:text-gray-300 dark:hover:text-blue-400 ${activeSection === "projects" ? "text-blue-600 dark:text-blue-400 after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-blue-600 dark:after:bg-blue-400" : ""}`}
           >
             Projects
           </a>
           <a 
             href="#contact"
-            className={`text-gray-700 hover:text-secondary transition-colors relative dark:text-gray-300 dark:hover:text-secondary ${activeSection === "contact" ? "text-secondary dark:text-secondary after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-secondary" : ""}`}
+            className={`text-gray-700 hover:text-blue-600 transition-colors relative dark:text-gray-300 dark:hover:text-blue-400 ${activeSection === "contact" ? "text-blue-600 dark:text-blue-400 after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-blue-600 dark:after:bg-blue-400" : ""}`}
           >
             Contact
           </a>
@@ -124,28 +124,28 @@ export default function Header() {
         <div className="container mx-auto px-4 py-3 flex flex-col space-y-3">
           <a 
             href="#about" 
-            className={`py-2 text-gray-700 hover:text-secondary transition-colors dark:text-gray-300 dark:hover:text-secondary ${activeSection === "about" ? "text-secondary dark:text-secondary" : ""}`}
+            className={`py-2 text-gray-700 hover:text-blue-600 transition-colors dark:text-gray-300 dark:hover:text-blue-400 ${activeSection === "about" ? "text-blue-600 dark:text-blue-400" : ""}`}
             onClick={closeMobileMenu}
           >
             About
           </a>
           <a 
             href="#skills" 
-            className={`py-2 text-gray-700 hover:text-secondary transition-colors dark:text-gray-300 dark:hover:text-secondary ${activeSection === "skills" ? "text-secondary dark:text-secondary" : ""}`}
+            className={`py-2 text-gray-700 hover:text-blue-600 transition-colors dark:text-gray-300 dark:hover:text-blue-400 ${activeSection === "skills" ? "text-blue-600 dark:text-blue-400" : ""}`}
             onClick={closeMobileMenu}
           >
             Skills
           </a>
           <a 
             href="#projects" 
-            className={`py-2 text-gray-700 hover:text-secondary transition-colors dark:text-gray-300 dark:hover:text-secondary ${activeSection === "projects" ? "text-secondary dark:text-secondary" : ""}`}
+            className={`py-2 text-gray-700 hover:text-blue-600 transition-colors dark:text-gray-300 dark:hover:text-blue-400 ${activeSection === "projects" ? "text-blue-600 dark:text-blue-400" : ""}`}
             onClick={closeMobileMenu}
           >
             Projects
           </a>
           <a 
             href="#contact" 
-            className={`py-2 text-gray-700 hover:text-secondary transition-colors dark:text-gray-300 dark:hover:text-secondary ${activeSection === "contact" ? "text-secondary dark:text-secondary" : ""}`}
+            className={`py-2 text-gray-700 hover:text-blue-600 transition-colors dark:text-gray-300 dark:hover:text-blue-400 ${activeSection === "contact" ? "text-blue-600 dark:text-blue-400" : ""}`}
             onClick={closeMobileMenu}
           >
             Contact
