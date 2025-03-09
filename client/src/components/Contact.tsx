@@ -125,7 +125,7 @@ export default function Contact() {
                 <div>
                   <button 
                     type="submit" 
-                    className="w-full bg-secondary hover:bg-blue-600 text-white px-6 py-3 rounded-md transition-colors font-medium flex items-center justify-center"
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md transition-colors font-medium flex items-center justify-center"
                     disabled={mutation.isPending}
                   >
                     <span>{mutation.isPending ? "Sending..." : "Send Message"}</span>
@@ -154,7 +154,7 @@ export default function Contact() {
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="bg-blue-100 dark:bg-blue-900 p-3 rounded-md">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-secondary dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
                   </div>

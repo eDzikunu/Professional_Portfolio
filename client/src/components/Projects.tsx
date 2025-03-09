@@ -63,8 +63,8 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
-                <a href="#" className="text-secondary dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 font-medium flex items-center space-x-1">
-                  <span>View Case Study</span>
+                <a href="#" className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium flex items-center space-x-1">
+                  <span>View</span>
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                   </svg>
@@ -75,7 +75,7 @@ export default function Projects() {
         </div>
         
         <div className="text-center mt-12">
-          <a href="#" className="inline-flex items-center space-x-2 bg-white dark:bg-gray-800 border border-secondary dark:border-blue-500 text-secondary dark:text-blue-400 hover:bg-secondary hover:text-white dark:hover:bg-blue-700 px-6 py-3 rounded-md transition-colors font-medium">
+          <a href="#" className="inline-flex items-center space-x-2 bg-white dark:bg-gray-800 border border-blue-600 dark:border-blue-500 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-700 px-6 py-3 rounded-md transition-colors font-medium">
             <span>View All Projects</span>
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
