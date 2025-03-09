@@ -34,9 +34,9 @@ export default function Header() {
         : "bg-transparent"
     }`}>
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <a href="#hero" className="text-2xl font-bold text-primary dark:text-white flex items-center space-x-2">
-          <span className="text-secondary">John</span>
-          <span>Doe</span>
+        <a href="#hero" className="text-2xl font-bold flex items-center space-x-2">
+          <span className="text-secondary dark:text-blue-400">John</span>
+          <span className="text-gray-800 dark:text-white">Doe</span>
         </a>
         
         {/* Desktop Navigation */}
