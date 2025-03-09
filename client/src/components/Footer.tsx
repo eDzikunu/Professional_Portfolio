@@ -1,6 +1,26 @@
 export default function Footer() {
   return (
-    <footer className="bg-primary text-white py-12">
+    <footer className="bg-primary text-white py-12 relative">
+      {/* Web Dev Image in bottom left corner */}
+      <div className="absolute bottom-0 left-0 w-20 h-20 md:w-32 md:h-32 overflow-hidden opacity-30">
+        <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          viewBox="0 0 24 24" 
+          fill="none" 
+          stroke="currentColor" 
+          strokeWidth="1" 
+          strokeLinecap="round" 
+          strokeLinejoin="round" 
+          className="w-full h-full text-blue-400"
+        >
+          <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
+          <line x1="12" y1="22" x2="12" y2="15.5"></line>
+          <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+          <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
+          <line x1="12" y1="2" x2="12" y2="8.5"></line>
+        </svg>
+      </div>
+      
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
