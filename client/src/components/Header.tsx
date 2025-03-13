@@ -9,7 +9,7 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const activeSection = useScrollActive();
   const { theme, toggleTheme } = useTheme();
-  
+
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -28,53 +28,74 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`fixed w-full z-50 transition-colors duration-300 ${
-      isScrolled 
-        ? "shadow-sm bg-white dark:bg-gray-900 bg-opacity-90 dark:bg-opacity-90 backdrop-blur-sm" 
-        : "bg-transparent"
-    }`}>
+    <header
+      className={`fixed w-full z-50 transition-colors duration-300 ${
+        isScrolled
+          ? "shadow-sm bg-white dark:bg-gray-900 bg-opacity-90 dark:bg-opacity-90 backdrop-blur-sm"
+          : "bg-transparent"
+      }`}
+    >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <a href="#hero" className="text-2xl font-bold flex items-center space-x-2">
-          <span className="text-blue-600 dark:text-blue-400">John</span>
-          <span className="text-gray-800 dark:text-white">Doe</span>
+        <a
+          href="#hero"
+          className="text-2xl font-bold flex items-center space-x-2"
+        >
+          <span className="text-blue-600 dark:text-blue-400">Edem</span>
+          <span className="text-gray-800 dark:text-white">Dzikzunu</span>
         </a>
-        
+
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8">
-          <a 
-            href="#about" 
-            className={`text-gray-700 hover:text-blue-600 transition-colors relative dark:text-gray-300 dark:hover:text-blue-400 ${activeSection === "about" ? "text-blue-600 dark:text-blue-400 after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-blue-600 dark:after:bg-blue-400" : ""}`}
+          <a
+            href="#about"
+            className={`text-gray-700 hover:text-blue-600 transition-colors relative dark:text-gray-300 dark:hover:text-blue-400 ${
+              activeSection === "about"
+                ? "text-blue-600 dark:text-blue-400 after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-blue-600 dark:after:bg-blue-400"
+                : ""
+            }`}
           >
             About
           </a>
-          <a 
+          <a
             href="#skills"
-            className={`text-gray-700 hover:text-blue-600 transition-colors relative dark:text-gray-300 dark:hover:text-blue-400 ${activeSection === "skills" ? "text-blue-600 dark:text-blue-400 after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-blue-600 dark:after:bg-blue-400" : ""}`}
+            className={`text-gray-700 hover:text-blue-600 transition-colors relative dark:text-gray-300 dark:hover:text-blue-400 ${
+              activeSection === "skills"
+                ? "text-blue-600 dark:text-blue-400 after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-blue-600 dark:after:bg-blue-400"
+                : ""
+            }`}
           >
             Skills
           </a>
-          <a 
+          <a
             href="#projects"
-            className={`text-gray-700 hover:text-blue-600 transition-colors relative dark:text-gray-300 dark:hover:text-blue-400 ${activeSection === "projects" ? "text-blue-600 dark:text-blue-400 after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-blue-600 dark:after:bg-blue-400" : ""}`}
+            className={`text-gray-700 hover:text-blue-600 transition-colors relative dark:text-gray-300 dark:hover:text-blue-400 ${
+              activeSection === "projects"
+                ? "text-blue-600 dark:text-blue-400 after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-blue-600 dark:after:bg-blue-400"
+                : ""
+            }`}
           >
             Projects
           </a>
-          <a 
+          <a
             href="#contact"
-            className={`text-gray-700 hover:text-blue-600 transition-colors relative dark:text-gray-300 dark:hover:text-blue-400 ${activeSection === "contact" ? "text-blue-600 dark:text-blue-400 after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-blue-600 dark:after:bg-blue-400" : ""}`}
+            className={`text-gray-700 hover:text-blue-600 transition-colors relative dark:text-gray-300 dark:hover:text-blue-400 ${
+              activeSection === "contact"
+                ? "text-blue-600 dark:text-blue-400 after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-blue-600 dark:after:bg-blue-400"
+                : ""
+            }`}
           >
             Contact
           </a>
         </nav>
-        
+
         <div className="hidden md:flex items-center space-x-4">
           {/* Theme Toggle Button */}
-          <button 
-            onClick={toggleTheme} 
+          <button
+            onClick={toggleTheme}
             className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
             aria-label="Toggle dark mode"
           >
-            {theme === 'dark' ? (
+            {theme === "dark" ? (
               <Sun className="h-5 w-5 text-white" />
             ) : (
               <Moon className="h-5 w-5 text-black" />
@@ -82,8 +103,8 @@ export default function Header() {
           </button>
 
           {/* Resume Button */}
-          <a 
-            href="/resume.pdf" 
+          <a
+            href="/resume.pdf"
             className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors"
             target="_blank"
             rel="noopener noreferrer"
@@ -91,67 +112,98 @@ export default function Header() {
             Resume
           </a>
         </div>
-        
+
         {/* Mobile Menu Button */}
         <div className="md:hidden flex items-center space-x-4">
           {/* Theme Toggle Button */}
-          <button 
-            onClick={toggleTheme} 
+          <button
+            onClick={toggleTheme}
             className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
             aria-label="Toggle dark mode"
           >
-            {theme === 'dark' ? (
+            {theme === "dark" ? (
               <Sun className="h-5 w-5 text-white" />
             ) : (
               <Moon className="h-5 w-5 text-black" />
             )}
           </button>
 
-          <button 
+          <button
             aria-label="Toggle mobile menu"
             className="text-primary dark:text-white focus:outline-none"
             onClick={toggleMobileMenu}
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             </svg>
           </button>
         </div>
       </div>
-      
+
       {/* Mobile Navigation */}
-      <div className={`md:hidden bg-white dark:bg-gray-900 border-t dark:border-gray-800 ${isMobileMenuOpen ? "block" : "hidden"}`}>
+      <div
+        className={`md:hidden bg-white dark:bg-gray-900 border-t dark:border-gray-800 ${
+          isMobileMenuOpen ? "block" : "hidden"
+        }`}
+      >
         <div className="container mx-auto px-4 py-3 flex flex-col space-y-3">
-          <a 
-            href="#about" 
-            className={`py-2 text-gray-700 hover:text-blue-600 transition-colors dark:text-gray-300 dark:hover:text-blue-400 ${activeSection === "about" ? "text-blue-600 dark:text-blue-400" : ""}`}
+          <a
+            href="#about"
+            className={`py-2 text-gray-700 hover:text-blue-600 transition-colors dark:text-gray-300 dark:hover:text-blue-400 ${
+              activeSection === "about"
+                ? "text-blue-600 dark:text-blue-400"
+                : ""
+            }`}
             onClick={closeMobileMenu}
           >
             About
           </a>
-          <a 
-            href="#skills" 
-            className={`py-2 text-gray-700 hover:text-blue-600 transition-colors dark:text-gray-300 dark:hover:text-blue-400 ${activeSection === "skills" ? "text-blue-600 dark:text-blue-400" : ""}`}
+          <a
+            href="#skills"
+            className={`py-2 text-gray-700 hover:text-blue-600 transition-colors dark:text-gray-300 dark:hover:text-blue-400 ${
+              activeSection === "skills"
+                ? "text-blue-600 dark:text-blue-400"
+                : ""
+            }`}
             onClick={closeMobileMenu}
           >
             Skills
           </a>
-          <a 
-            href="#projects" 
-            className={`py-2 text-gray-700 hover:text-blue-600 transition-colors dark:text-gray-300 dark:hover:text-blue-400 ${activeSection === "projects" ? "text-blue-600 dark:text-blue-400" : ""}`}
+          <a
+            href="#projects"
+            className={`py-2 text-gray-700 hover:text-blue-600 transition-colors dark:text-gray-300 dark:hover:text-blue-400 ${
+              activeSection === "projects"
+                ? "text-blue-600 dark:text-blue-400"
+                : ""
+            }`}
             onClick={closeMobileMenu}
           >
             Projects
           </a>
-          <a 
-            href="#contact" 
-            className={`py-2 text-gray-700 hover:text-blue-600 transition-colors dark:text-gray-300 dark:hover:text-blue-400 ${activeSection === "contact" ? "text-blue-600 dark:text-blue-400" : ""}`}
+          <a
+            href="#contact"
+            className={`py-2 text-gray-700 hover:text-blue-600 transition-colors dark:text-gray-300 dark:hover:text-blue-400 ${
+              activeSection === "contact"
+                ? "text-blue-600 dark:text-blue-400"
+                : ""
+            }`}
             onClick={closeMobileMenu}
           >
             Contact
           </a>
-          <a 
-            href="/resume.pdf" 
+          <a
+            href="/resume.pdf"
             className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors text-center"
             target="_blank"
             rel="noopener noreferrer"

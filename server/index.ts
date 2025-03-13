@@ -6,6 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+// Middleware for logging API requests
 app.use((req, res, next) => {
   const start = Date.now();
   const path = req.path;
@@ -36,9 +37,11 @@ app.use((req, res, next) => {
   next();
 });
 
+// Start the server asynchronously
 (async () => {
   const server = await registerRoutes(app);
 
+  // Error handling middleware
   app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
     const status = err.status || err.statusCode || 500;
     const message = err.message || "Internal Server Error";
@@ -47,23 +50,22 @@ app.use((req, res, next) => {
     throw err;
   });
 
-  // importantly only setup vite in development and after
-  // setting up all the other routes so the catch-all route
-  // doesn't interfere with the other routes
+  // Setup Vite only in development
   if (app.get("env") === "development") {
     await setupVite(app, server);
   } else {
     serveStatic(app);
   }
 
-  // ALWAYS serve the app on port 5000
-  // this serves both the API and the client
-  const port = 5000;
+  // ✅ Fix: Use `process.env.PORT || 3000` for flexibility
+  const PORT = process.env.PORT || 3000;
+
+  // ✅ Ensure server listens on `localhost`
   server.listen({
-    port,
-    host: "0.0.0.0",
-    reusePort: true,
+    port: PORT,
+    host: "127.0.0.1", // ✅ Forces IPv4 for better compatibility
   }, () => {
-    log(`serving on port ${port}`);
+    log(`✅ Server running on http://localhost:${PORT}`);
   });
+
 })();

@@ -3,6 +3,7 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertMessageSchema } from "@shared/schema";
 import { fromZodError } from "zod-validation-error";
+import { ZodError } from "zod";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // put application routes here
@@ -15,7 +16,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const message = await storage.createMessage(validatedData);
       res.status(201).json({ success: true, message: "Message sent successfully" });
     } catch (err) {
-      if (err instanceof Error) {
+      if (err instanceof ZodError) {
         const validationError = fromZodError(err);
         res.status(400).json({ success: false, message: validationError.message });
       } else {
