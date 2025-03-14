@@ -29,7 +29,7 @@ export default function About() {
               My Journey
             </h3>
             <p className="text-gray-700 dark:text-slate-300 mb-4">
-              With over 5 years of experience in web development, I've worked on
+              With over 3 years of experience in web development, I've worked on
               a diverse range of projects from e-commerce sites to complex web
               applications. My passion lies in creating elegant, efficient code
               that translates into seamless user experiences.
