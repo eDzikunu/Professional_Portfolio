@@ -79,7 +79,7 @@ export default function Footer() {
               <ul className="space-y-2">
                 <li>
                   <a
-                    href="https://github.com"
+                    href="https://github.com/eDzikunu"
                     className="text-slate-400 dark:text-slate-300 hover:text-white transition-colors"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -89,7 +89,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/edemdzikunu/"
                     className="text-slate-400 dark:text-slate-300 hover:text-white transition-colors"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -99,7 +99,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://twitter.com"
+                    href="https://x.com/GrindAndCode"
                     className="text-slate-400 dark:text-slate-300 hover:text-white transition-colors"
                     target="_blank"
                     rel="noopener noreferrer"

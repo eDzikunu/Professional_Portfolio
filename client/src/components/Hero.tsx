@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import ProfilePic from "@/assets/Edem_Dzikunu_Profile_Pic.jpg";
 
 export default function Hero() {
   return (
@@ -15,7 +16,7 @@ export default function Hero() {
         >
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 overflow-hidden shadow-lg flex items-center justify-center">
             <img
-              src="/Edem_Dzikunu_Profile_Pic.jpg"
+              src={ProfilePic}
               alt="My Profile"
               className="w-full h-full object-cover"
             />
