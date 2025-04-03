@@ -6,7 +6,7 @@ import { z } from "zod";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
-import { insertMessageSchema } from "@shared/schema";
+import { insertMessageSchema } from "@/shared/schema";
 
 const formSchema = insertMessageSchema.extend({
   name: z.string().min(2, "Name must be at least 2 characters"),
