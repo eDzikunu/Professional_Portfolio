@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import useScrollActive from "@/hooks/useScrollActive";
 import { useTheme } from "@/lib/ThemeContext";
 import { Sun, Moon } from "lucide-react";
+import Resume from "../assets/Edem_Dzikunu_Full-Stack_Resume.pdf";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -41,7 +42,7 @@ export default function Header() {
           className="text-2xl font-bold flex items-center space-x-2"
         >
           <span className="text-blue-600 dark:text-blue-400">Edem</span>
-          <span className="text-gray-800 dark:text-white">Dzikzunu</span>
+          <span className="text-gray-800 dark:text-white">Dzikunu</span>
         </a>
 
         {/* Desktop Navigation */}
@@ -104,7 +105,7 @@ export default function Header() {
 
           {/* Resume Button */}
           <a
-            href="/resume.pdf"
+            href={Resume}
             className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors"
             target="_blank"
             rel="noopener noreferrer"
@@ -203,7 +204,7 @@ export default function Header() {
             Contact
           </a>
           <a
-            href="/resume.pdf"
+            href={Resume}
             className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors text-center"
             target="_blank"
             rel="noopener noreferrer"

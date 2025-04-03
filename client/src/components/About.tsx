@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Resume from "../assets/Edem_Dzikunu_Full-Stack_Resume.pdf";
 
 export default function About() {
   return (
@@ -29,16 +30,17 @@ export default function About() {
               My Journey
             </h3>
             <p className="text-gray-700 dark:text-slate-300 mb-4">
-              With over 3 years of experience in web development, I've worked on
-              a diverse range of projects from e-commerce sites to complex web
-              applications. My passion lies in creating elegant, efficient code
-              that translates into seamless user experiences.
+              With over 3 years of experience in web development, I’ve built
+              everything from e-commerce sites to complex web applications. I’m
+              passionate about writing clean, efficient code that creates
+              seamless user experiences and scales with real-world needs.
             </p>
             <p className="text-gray-700 dark:text-slate-300 mb-6">
-              I started my journey as a self-taught developer before formally
-              studying Computer Science. This blend of practical and theoretical
-              knowledge has given me a unique perspective on problem-solving and
-              efficient development practices.
+              I began my journey studying Computer Science, then deepened my
+              skills through hands-on experience — building personal projects
+              and continuously learning as a self-taught developer. That blend
+              of theory and practice has shaped how I approach problem-solving
+              and write scalable, maintainable code.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mb-6">
@@ -93,7 +95,7 @@ export default function About() {
                   </svg>
                 </div>
                 <span className="text-gray-700 dark:text-slate-300">
-                  B.S. Computer Science
+                  BSc Science
                 </span>
               </div>
               <div className="flex items-center space-x-2">
@@ -118,7 +120,7 @@ export default function About() {
             </div>
 
             <a
-              href="/resume.pdf"
+              href={Resume}
               className="inline-flex items-center space-x-2 bg-white dark:bg-gray-800 border border-blue-600 dark:border-blue-500 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-700 px-4 py-2 rounded-md transition-colors font-medium"
               target="_blank"
               rel="noopener noreferrer"

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ProfilePic from "@/assets/Edem_Dzikunu_Profile_Pic.jpg";
+import ProfilePic from "../assets/Edem_Dzikunu_Profile_Pic.jpg";
 
 export default function Hero() {
   return (
@@ -35,8 +35,10 @@ export default function Hero() {
             </span>
           </h1>
           <p className="text-gray-700 dark:text-slate-300 text-lg md:text-xl mb-8 max-w-lg">
-            I build exceptional and accessible digital experiences for the web,
-            specializing in modern JavaScript frameworks and responsive design.
+            I'm a full-stack developer who loves building seamless, user-focused
+            applications — from responsive frontends to solid backend systems. I
+            enjoy creating accessible, high-performing experiences that scale
+            and make a real impact.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
